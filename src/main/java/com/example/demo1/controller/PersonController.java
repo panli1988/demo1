@@ -24,4 +24,10 @@ public class PersonController {
     public String test(){
         return "success";
     }
+
+    @GetMapping("/testTransaction")
+    public String testTransaction(){
+        personService.testTransaction();
+        return "SUCCESS";
+    }
 }
