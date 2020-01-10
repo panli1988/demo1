@@ -50,8 +50,9 @@ public class DataSourceConfigDs2 {
         xaDataSource.setMaxPoolSize(50);
         xaDataSource.setBorrowConnectionTimeout(60000);
         xaDataSource.setReapTimeout(60000);
-        xaDataSource.setMaxIdleTime(3600);
+        xaDataSource.setMaxIdleTime(36000);
         xaDataSource.setMaintenanceInterval(60);
+        xaDataSource.setMaxLifetime(36000);
         return xaDataSource;
     }
 
